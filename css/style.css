@@ -2,9 +2,6 @@ body {
     background-color: #fafafa;
 }
 
-.section {
-    height: 500px;
-}
 
 .grayScale {
     filter: grayscale(0);
@@ -95,8 +92,9 @@ body {
         font-size: 15px;
     }
 
-    .section {
-        height: 700px;
+    
+    #youtubeLink {
+        display: none;
     }
 }
 
@@ -115,10 +113,6 @@ body {
         font-size: 15px;
     }
 
-    .section {
-        height: 700px;
-    }
-}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -140,7 +134,5 @@ body {
         font-size: 15px;
     }
 
-    .section {
-        height: 700px;
-    }
+    
 }

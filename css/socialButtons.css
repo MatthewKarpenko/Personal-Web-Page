@@ -20,6 +20,7 @@ body{
   color: #3498db;
   overflow: hidden;
   position: relative;
+  margin-bottom: -20px;
 }
 .Socbtn i {
   line-height: 64px;
