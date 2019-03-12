@@ -1,5 +1,10 @@
+.hidden {
+    display: none;
+}
+
 body {
     background-color: #fafafa;
+    margin: 0px;
 }
 
 
@@ -46,6 +51,7 @@ body {
 .flex-element {
     width: 200px;
     height: 200px;
+    text-align: center;
 }
 
 .flex-element div {
@@ -67,11 +73,85 @@ body {
 
 .programmingPortfolio {
     width: 308px !important;
+    filter: grayscale(1) !important;
 }
 
 .line {
     opacity: 0.5;
 }
+
+#sideNavMenu {
+    position: fixed;
+    top: 17px;
+    color: #9e9e9e;
+}
+#sideNavMenu i {
+    width: 200px;
+}
+
+.photoCategories {
+    display: flex;
+    justify-content: space-around ;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.imageTypes {
+    object-fit: cover;
+    height: 283px;
+    width: 209px;
+    margin: 15px 10px 0px 10px;
+    cursor: pointer;
+}
+
+#modalBackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(80, 80, 80, .5);
+
+}
+   #albumModal {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       margin: auto;
+       margin-top: 20px;
+       border-radius: 2px;
+       width: 70%;
+       max-height: 680px;
+       overflow: auto;
+       background-color: #eeeeee;
+       padding: 0px 40px 40px 40px;
+   }
+
+   .nameBar {
+       width: 100%;
+       height: 47px;
+       border-radius: 0px 0px 17px 17px;
+       text-align: center;
+       background-color: #424242;
+       font-size: 25px;
+       color: white;
+   }
+
+   .imageGallery {
+       object-fit: cover;
+       width: 200px;
+       height: 200px;
+       margin: 20px;
+       cursor: pointer;
+   }
+
+
+
+
+
+
+
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
