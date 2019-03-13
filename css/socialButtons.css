@@ -6,8 +6,8 @@ body{
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
-  margin-top: 70px;
-  margin-left: -125px;
+  margin-top: 38px;
+  margin-left: 130px;
 }
 .Socbtn {
   display: inline-block;
@@ -74,7 +74,7 @@ body{
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1146px) and (orientation: landscape) {
   .middle {
     margin: auto; 
     margin-top: 50px;

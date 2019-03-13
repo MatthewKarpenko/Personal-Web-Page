@@ -26,15 +26,16 @@ body {
 
 
 #photoOfMine {
+    display: inline-block;
     width: 280px;
     height: 295px;
     object-fit: cover;
-    float: left;
     margin-right: 90px;
 }
 
 #textAboutMe {
-    width: 90%;
+    display: inline-block;
+    width: 50%;
     margin-right: 20px;
     font-size: 17px;
 }
@@ -157,6 +158,8 @@ body {
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+
+
 @media (min-width: 320px) and (max-width: 480px) {
     #photoOfMine {
         display: block;
@@ -169,12 +172,18 @@ body {
     #textAboutMe {
         display: block;
         margin: auto;
-        font-size: 15px;
+        font-size: 14px;
+        width: 90%;
     }
 
     
     #youtubeLink {
         display: none;
+    }
+
+    .nameBar {
+        height: 59px;
+        font-size: 19px;
     }
 }
 
@@ -191,15 +200,16 @@ body {
         display: block;
         margin: auto;
         font-size: 15px;
+        width: 90%;
     }
 
-
+}
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1146px) and (orientation: landscape) {
     #photoOfMine {
         display: block;
         margin: auto;
@@ -209,10 +219,11 @@ body {
     }
 
     #textAboutMe {
+        width: 90%;
         display: block;
         margin: auto;
         font-size: 15px;
     }
-
     
 }
+

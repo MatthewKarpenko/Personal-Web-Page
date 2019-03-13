@@ -5,19 +5,26 @@ let images = {
 }
 
 let albums = {
-  modern: ["images/fashion/1.jpg", "images/fashion/2.jpg", "images/fashion/3.jpg", "images/fashion/4.jpg", "images/fashion/5.jpg", "images/fashion/6.jpg", "images/fashion/7.jpg", "images/fashion/8.jpg", "images/fashion/9.jpg", "images/fashion/10.jpg", "images/fashion/11.jpg", "images/fashion/12.jpg", "images/fashion/13.jpg"],
-  oldStyle: ["images/oldPhotos/1.jpg", "images/oldPhotos/2.jpg", "images/oldPhotos/3.jpg", "images/oldPhotos/4.jpg", "images/oldPhotos/5.jpg", "images/oldPhotos/6.jpg", "images/oldPhotos/7.jpg", "images/oldPhotos/8.jpg", "images/oldPhotos/9.jpg", "images/oldPhotos/10.jpg", "images/oldPhotos/11.jpg", "images/oldPhotos/12.jpg"],
-  old: ["images/film/1.jpg", "images/film/2.jpg", "images/film/3.jpg", "images/film/4.jpg", "images/film/5.jpg", "images/film/6.jpg", "images/film/7.jpg", "images/film/8.jpg"]
+  modern: ["images/fashion/1.jpg", "images/fashion/2.jpg", "images/fashion/3.jpg", "images/fashion/4.jpg", "images/fashion/5.jpg", "images/fashion/6.jpg"],
+  oldStyle: ["images/oldPhotos/1.jpg", "images/oldPhotos/2.jpg", "images/oldPhotos/3.jpg", "images/oldPhotos/4.jpg", "images/oldPhotos/5.jpg", "images/oldPhotos/6.jpg"],
+  old: ["images/film/1.jpg", "images/film/2.jpg", "images/film/3.jpg", "images/film/4.jpg", "images/film/5.jpg", "images/film/6.jpg", "images/film/7.jpg"]
+}
+let bigPic = {
+  block: document.getElementById('myModal'),
+  picture: document.getElementById("img01"),
+  span: document.querySelector('.close')
 }
 
 let modal = document.querySelector('#modalBackground');
 let imgKeeper = document.querySelector('#albumModal');
 let categoriesPics = document.querySelectorAll('.imageTypes');
 
-modal.addEventListener('click', function () {
-  if (event.currentTarget == modal) {
-    let imgInGallery = imgKeeper.querySelectorAll('.imageTypes')
 
+modal.addEventListener('click', function () {
+  console.log(event.target)
+  if (event.target === modal) {
+    let imgInGallery = imgKeeper.querySelectorAll('.imageGallery')
+console.log(imgInGallery)
     modal.classList.add('hidden');
     document.body.style.overflow = "";
     imgInGallery.forEach(function (arrElem) {
@@ -36,6 +43,7 @@ function showAlbums(images, event) {
     newImage.classList.add('imageGallery');
     imgKeeper.appendChild(newImage)
   })
+  modalFunctionality()
 
 }
 
@@ -52,6 +60,28 @@ function showCategory() {
       }
     })
   })
+  
 }
 
-window.onload = showCategory
+window.onload = showCategory;
+
+function modalFunctionality() {
+  document.querySelectorAll('.imageGallery').forEach(function(arrElem){
+    arrElem.addEventListener('click', function() {
+      bigPic.block.style.display = "block";
+      bigPic.picture.src = this.src;
+      document.body.style.overflow = "hidden"
+    })
+  })
+}
+
+bigPic.span.addEventListener('click', function() {
+  bigPic.block.style.display = "none";
+  document.body.style.overflow = ""
+})
+bigPic.block.addEventListener('click',function(){
+  if(event.currentTarget === bigPic.block) {
+    bigPic.block.style.display = 'none';
+    document.body.style.overflow = ""
+  }
+})

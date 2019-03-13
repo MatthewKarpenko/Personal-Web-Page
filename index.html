@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/loading-bar.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/modal.css" <link type="text/css" rel="stylesheet" href="css/materialize.min.css"
+  <link rel="stylesheet" href="css/modal.css" link type="text/css" rel="stylesheet" href="css/materialize.min.css"
     media="screen,projection" />
   <link rel="stylesheet" href="css/socialButtons.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -29,9 +29,9 @@
       <div class="nav-wrapper grey darken-4">
         <a href="#" class="brand-logo center"><img src="images/m.png" alt="Logo" class="logoPic"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">MAIN</a></li>
-          <li><a href="#">PORTFOLIIO</a></li>
-          <li><a href="#">CONTACT</a></li>
+        <li><a  href="#Aboutme"> About me</a></li>
+        <li><a  href="#portfolioPart">Portfolio</a></li>
+        <li><a  href="#contactMe">Contact me</a></li>
         </ul>
       </div>
     </nav>
@@ -42,8 +42,11 @@
     </div>
 
     <section>
-      <div class="section container">
-        <p class="header">About me</p>
+      <div class="container">
+      <p class="header" id="Aboutme">About me</p>
+      </div>
+      <div class="section container" id="infoBlock">
+       
         <img src="images/me.jpg" alt="PhotoOfMine" id="photoOfMine">
         <div id="textAboutMe">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -82,7 +85,7 @@
 
     <section>
       <div class="container">
-        <p class="header">My skills</p>
+        <p class="header" id="mySkills">My skills</p>
         <div class="progressBlock">
           <div class="webDevelopment flex-element">
             <p class="skillName">Programming</p>
@@ -138,7 +141,8 @@
     </section>
 
     <hr class="line" />
-    <p class="header">Web-projects</p>
+    <section>
+    <p class="header" id="portfolioPart">Web-projects</p>
     <div class="progressBlock">
 
       <div class="card hoverable">
@@ -180,9 +184,9 @@
         </div>
       </div>
     </div>
-
+</section>
     <hr class="line" />
-
+<section>
     <p class="header">My photos</p>
 
     <div class = "photoCategories container">
@@ -190,6 +194,24 @@
       <img src="images/ast2.jpg" alt="Fashion" class="imageTypes hoverable" id="fashion">
       <img src="images/film.JPG" alt="film" class="imageTypes hoverable" id="film">
     </div>
+</section>
+
+<section>
+<p class="header" id="contactMe">Contact me</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="modalBackground" class="hidden">
   <div id="albumModal">
     <div class="nameBar">My personal gallery</div>
@@ -197,31 +219,14 @@
 </div>
 
 
-    <div id="myModal" class="imageModal">
-      <div id="myModal-content">
-        <img class="modal-content" id="img01">
-      </div>
-      <img src="/images/arrow2.png" alt="" id="modalLeftBtn">
-      <img src="/images/arrowRight2.png" alt="" id="modalRightBtn">
+<div id="myModal" class="modal">
 
-    </div>
+  <span class="close">&times;</span>
 
+  <img class="modal-content" id="img01">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <div id="caption"></div>
+</div>
 
 
     <ul id="slide-out" class="sidenav">
@@ -240,8 +245,11 @@
       <li>
         <div class="divider"></div>
       </li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      <li><a class="subheader">Links</a></li>
+      <li><a href="#Aboutme" class="waves-effect">About me</a></li>
+      <li><a href="#mySkills">My skills</a></li>
+      <li><a class="waves-effect" href="#portfolioPart">Portfolio</a></li>
+      <li><a href="#contactMe">Contact me</a></li>
     </ul>
     <a href="#" data-target="slide-out" id="sideNavMenu" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
 
@@ -258,9 +266,10 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">main</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">portfolio</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">contact</a></li>
+            <li><a class="grey-text text-lighten-3" href="#Aboutme">about me</a></li>
+            <li><a class="grey-text text-lighten-3" href="#mySkills">my skills</a></li>
+            <li><a class="grey-text text-lighten-3" href="#portfolioPart">portfolio</a></li>
+            <li><a class="grey-text text-lighten-3" href="#contactMe">contact me</a></li>
 
           </ul>
         </div>
