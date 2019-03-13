@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Compiled and minified CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/loading-bar.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="css/socialButtons.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800" rel="stylesheet">
+  <!--JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/loading-bar.js"></script>
 
@@ -29,9 +30,9 @@
       <div class="nav-wrapper grey darken-4">
         <a href="#" class="brand-logo center"><img src="images/m.png" alt="Logo" class="logoPic"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a  href="#Aboutme"> About me</a></li>
-        <li><a  href="#portfolioPart">Portfolio</a></li>
-        <li><a  href="#contactMe">Contact me</a></li>
+          <li><a href="#Aboutme"> About me</a></li>
+          <li><a href="#portfolioPart">Portfolio</a></li>
+          <li><a href="#contactMe">Contact me</a></li>
         </ul>
       </div>
     </nav>
@@ -43,10 +44,10 @@
 
     <section>
       <div class="container">
-      <p class="header" id="Aboutme">About me</p>
+        <p class="header" id="Aboutme">About me</p>
       </div>
       <div class="section container" id="infoBlock">
-       
+
         <img src="images/me.jpg" alt="PhotoOfMine" id="photoOfMine">
         <div id="textAboutMe">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -142,116 +143,144 @@
 
     <hr class="line" />
     <section>
-    <p class="header" id="portfolioPart">Web-projects</p>
-    <div class="progressBlock">
+      <p class="header" id="portfolioPart">Web-projects</p>
+      <div class="progressBlock">
 
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="programmingPortfolio" src="images/code6.jpg">
-          <span class="card-title">I project</span>
-        </div>
-        <div class="card-content">
-          <p>Card for the first 'CodersCamp' project</p>
-        </div>
-        <div class="card-action">
-          <a href="#" class="teal-text darken-3">This is a link</a>
-        </div>
-      </div>
-
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="programmingPortfolio" src="images/code3.jpg">
-          <span class="card-title">II project</span>
-        </div>
-        <div class="card-content">
-          <p>Card for the second 'CodersCamp' project</p>
-        </div>
-        <div class="card-action">
-          <a href="#" class="teal-text darken-3">This is a link</a>
-        </div>
-      </div>
-
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="programmingPortfolio" src="images/code4.jpg">
-          <span class="card-title">III project</span>
-        </div>
-        <div class="card-content">
-          <p>Card for the third 'CodersCamp' project</p>
-        </div>
-        <div class="card-action">
-          <a href="#" class="teal-text darken-3">This is a link</a>
-        </div>
-      </div>
-    </div>
-</section>
-    <hr class="line" />
-<section>
-    <p class="header">My photos</p>
-
-    <div class = "photoCategories container">
-      <img src="images/oldFashion.jpg" alt="RetroStyle" class="imageTypes hoverable" id="oldFashion">
-      <img src="images/ast2.jpg" alt="Fashion" class="imageTypes hoverable" id="fashion">
-      <img src="images/film.JPG" alt="film" class="imageTypes hoverable" id="film">
-    </div>
-</section>
-
-<section>
-<p class="header" id="contactMe">Contact me</p>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="modalBackground" class="hidden">
-  <div id="albumModal">
-    <div class="nameBar">My personal gallery</div>
-  </div>
-</div>
-
-
-<div id="myModal" class="modal">
-
-  <span class="close">&times;</span>
-
-  <img class="modal-content" id="img01">
-
-  <div id="caption"></div>
-</div>
-
-
-    <ul id="slide-out" class="sidenav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="images/photo3.jpg">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="programmingPortfolio" src="images/code6.jpg">
+            <span class="card-title">I project</span>
           </div>
-          <a href="#user"><img class="circle" src="images/me2.jpg"></a>
-          <a href="#name"><span class="white-text name">Matthew Karpenko</span></a>
-          <a href="#email"><span class="white-text email">mtw.karp@gmail.com</span></a>
+          <div class="card-content">
+            <p>Card for the first 'CodersCamp' project</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text darken-3">This is a link</a>
+          </div>
         </div>
-      </li>
-      <li><a href="https://github.com/MatthewKarpenko"><i class="material-icons">cloud</i>Github</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="subheader">Links</a></li>
-      <li><a href="#Aboutme" class="waves-effect">About me</a></li>
-      <li><a href="#mySkills">My skills</a></li>
-      <li><a class="waves-effect" href="#portfolioPart">Portfolio</a></li>
-      <li><a href="#contactMe">Contact me</a></li>
-    </ul>
-    <a href="#" data-target="slide-out" id="sideNavMenu" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="programmingPortfolio" src="images/code3.jpg">
+            <span class="card-title">II project</span>
+          </div>
+          <div class="card-content">
+            <p>Card for the second 'CodersCamp' project</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text darken-3">This is a link</a>
+          </div>
+        </div>
+
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="programmingPortfolio" src="images/code4.jpg">
+            <span class="card-title">III project</span>
+          </div>
+          <div class="card-content">
+            <p>Card for the third 'CodersCamp' project</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text darken-3">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="line" />
+    <section>
+      <p class="header">My photos</p>
+
+      <div class="photoCategories container">
+        <img src="images/oldFashion.jpg" alt="RetroStyle" class="imageTypes hoverable" id="oldFashion">
+        <img src="images/ast2.jpg" alt="Fashion" class="imageTypes hoverable" id="fashion">
+        <img src="images/film.JPG" alt="film" class="imageTypes hoverable" id="film">
+      </div>
+    </section>
+<hr class="line"/>
+    <section>
+      <p class="bigLetters">Let`s do something amazing.</p>
+    </section>
+
+    <div class="container ">
+
+
+      <div class="table kontaktsContainer">
+        <table>
+
+          <tbody>
+            <tr>
+              <td>
+                <a href="#"><img src="/icons/mail.svg" class="communication"> mtw.karp@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><a href="tel:+380997726120">
+                  <img src="/icons/iphone.svg" class="communication"> +380997726120</a></td>
+            </tr>
+            <tr>
+              <td> <a href="#"><img src="/icons/instagram.svg" class="communication">Instagram</a></td>
+
+            </tr>
+
+            <tr>
+              <td><a href="#"> <img src="/icons/facebook_1.svg" class="communication">Facebook</a></td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+      <div id="modalBackground" class="hidden">
+        <div id="albumModal">
+          <div class="nameBar">My personal gallery</div>
+        </div>
+      </div>
+
+
+      <div id="myModal" class="modal">
+
+        <span class="close">&times;</span>
+
+        <img class="modal-content" id="img01">
+
+        <div id="caption"></div>
+      </div>
+
+
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/photo3.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="images/me2.jpg"></a>
+            <a href="#name"><span class="white-text name">Matthew Karpenko</span></a>
+            <a href="#email"><span class="white-text email">mtw.karp@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="https://github.com/MatthewKarpenko"><i class="material-icons">cloud</i>Github</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Links</a></li>
+        <li><a href="#Aboutme" class="waves-effect">About me</a></li>
+        <li><a href="#mySkills">My skills</a></li>
+        <li><a class="waves-effect" href="#portfolioPart">Portfolio</a></li>
+        <li><a href="#contactMe">Contact me</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" id="sideNavMenu" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
 
 
   </main>
