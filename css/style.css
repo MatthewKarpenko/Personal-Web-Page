@@ -73,7 +73,7 @@ body {
 }
 
 .programmingPortfolio {
-    width: 308px !important;
+    width: 325px !important;
     filter: grayscale(1) !important;
 }
 
@@ -218,6 +218,9 @@ body {
     .nameBar {
         height: 59px;
         font-size: 19px;
+    }
+    .programmingPortfolio {
+        width: 307px !important;
     }
 }
 
